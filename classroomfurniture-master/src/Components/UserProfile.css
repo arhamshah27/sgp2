@@ -1,0 +1,108 @@
+/* Outer container for user profile */
+.userprofile-outercontainer {
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* User profile styling */
+.user-profile {
+    background: linear-gradient(135deg, #ffbb00, #ff8800);
+    padding: 20px;
+    border-radius: 15px;
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.user-profile .heading {
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 4px solid white;
+}
+
+/* Data row styling */
+.data-row {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.data-row span {
+    width: 60%;
+    padding: 12px;
+    border: 2px solid white;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+/* Update password section */
+.update-password {
+    background: rgba(65, 65, 65, 0.9);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.update-password p {
+    font-size: 28px;
+    color: #ffbb00;
+    text-align: center;
+    font-weight: bold;
+}
+
+.update-password label {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.update-password input {
+    border: 3px solid #ffbb00;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #222;
+    color: white;
+    outline: none;
+    transition: border 0.3s;
+    width: 100%;
+}
+
+.update-password input:focus {
+    border-color: white;
+}
+
+/* Button styling */
+.mybtn {
+    width: 120px;
+    display: block;
+    margin: 15px auto;
+    background: linear-gradient(135deg, #444, #222);
+    border-radius: 8px;
+    border: 2px solid white;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.mybtn:hover {
+    color: #ffbb00;
+    border-color: #ffbb00;
+    background: linear-gradient(135deg, #222, #000);
+    cursor: pointer;
+    transform: scale(1.05);
+}

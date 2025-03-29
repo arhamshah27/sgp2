@@ -1,0 +1,144 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(135deg, #000, #222);
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo Styling */
+.LeftContainer img {
+    width: 120px;
+    transition: transform 0.3s;
+}
+
+.LeftContainer img:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation Buttons */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav button {
+    background: transparent;
+    border: 2px solid transparent;
+    color: white;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+nav button:hover {
+    background: white;
+    color: #ffbb00;
+    border: 2px solid #ffbb00;
+    transform: scale(1.1);
+}
+
+/* Cart Button */
+.cart-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.cart-btn img {
+    width: 35px;
+    transition: transform 0.3s;
+}
+
+.cart-btn img:hover {
+    transform: rotate(15deg);
+}
+
+.cart-icon-css {
+    background: #ffbb00;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    top: 3px;
+    right: 8px;
+    transition: all 0.3s;
+}
+
+.cart-icon-css:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Profile Icon */
+.profile-icon {
+    width: 45px;
+    padding-right: 15px;
+    transition: transform 0.3s;
+}
+
+.profile-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Logout Button */
+.logout-btn {
+    background: #ffbb00;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 12px;
+    padding: 8px 15px;
+    font-size: 16px;
+    transition: all 0.3s;
+    border: none;
+}
+
+.logout-btn:hover {
+    background: white;
+    color: #ffbb00;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Product Types Section */
+.Product-types {
+    background-color: #ffbb00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0; /* Reduced from 10px to 5px */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Product-types button {
+    background-color: #ffbb00;
+    padding: 6px 20px; /* Reduced padding-top/bottom from 10px to 6px */
+    margin: 5px 15px; /* Reduced margin-top/bottom from 10px to 5px */
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect remains the same */
+.Product-types button:hover {
+    background-color: white;
+    color: #ffbb00;
+    font-weight: 600;
+    transform: scale(1.1);
+}
