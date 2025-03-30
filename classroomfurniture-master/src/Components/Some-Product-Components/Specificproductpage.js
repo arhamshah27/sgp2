@@ -108,9 +108,10 @@ const Specificproductpage = () => {
                         
                         <p className='prod-keyspecs'>{product.keyspecs}</p>
                         <div className='specific-price-container'>
-                            <p className='mrp'>MRP: <p className='rate'>₹{mrp}</p></p>
-                            <p className='saleprice'>Discount Price: <p className='rate'>₹{saleprice}</p></p>
-                            <p className='yousave'>You Save: ₹{mrp - saleprice}</p>
+                        <p className='mrp'>MRP: <span className='rate'>₹{mrp.toFixed(2)}</span></p>
+<p className='saleprice'>Discount Price: <span className='rate'>₹{saleprice.toFixed(2)}</span></p>
+<p className='yousave'>You Save: ₹{(mrp - saleprice).toFixed(2)}</p>
+
                         </div>
                         <p className='prod-details-head'>Details</p>
                         

@@ -14,16 +14,12 @@
     padding: 3px;
     color: #ffbb00;
     border-bottom: 3px solid #ffbb00;
-
 }
 
 .proceed {
     display: flex;
     justify-content: center;
 }
-
-
-
 
 .proceed button {
     background-color: white;
@@ -35,7 +31,65 @@
     border-radius: 10px;
 }
 
-
 .proceed button:hover {
     background-color: black;
+}
+
+/* New fancy total price styling */
+.total-price {
+    background-color: #ffbb00;
+    color: black;
+    margin: 15px 0;
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    transition: transform 0.2s;
+}
+
+.total-price:hover {
+    transform: scale(1.02);
+}
+
+.total-price h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.total-price::before,
+.total-price::after {
+    content: "";
+    position: absolute;
+    background-color: #ffbb00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.total-price::before {
+    top: -10px;
+    left: -10px;
+}
+
+.total-price::after {
+    bottom: -10px;
+    right: -10px;
+}
+.payment-image {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.payment-image img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }

@@ -10,7 +10,7 @@ import UserProfile from './Components/UserProfile';
 import Addproduct from './Components/Addproduct';
 import Allproductpage from './Components/Some-Product-Components/Allproductpage.js';
 import Specificproductpage from './Components/Some-Product-Components/Specificproductpage.js';
-import BillPage from './Components/Some-Product-Components/Billpage.js';
+
 function App() {
   return (
    <BrowserRouter>
@@ -27,7 +27,7 @@ function App() {
       <Route exact path="/product-type/benches" element={<Allproductpage type={'Benches'} />} />
       <Route exact path="/product-type/lab-tables" element={<Allproductpage type={'Lab-Tables'} />} />
       <Route exact path="/product/:type/:id" element={<Specificproductpage />} />
-      <Route path="/billpage" element={<BillPage />} />
+      
 
       <Route exact path="/cartdata" element={<Cart />} />
 
